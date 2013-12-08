@@ -490,9 +490,9 @@
         {/block:Pages}
           <li><a href="{RSS}" class="rss">rss</a></li>
           <li><a href="/archive" class="archive">archive</a></li>
+          {block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
   		</ul>
 		{/block:HasPages}
-		{block:AskEnabled}<a href="/ask">{AskLabel}</a>{/block:AskEnabled}
 	  {block:IfColophon}<p class="small">{text:Colophon}</p>{block:IfColophon}
 	</footer>
 </body>
